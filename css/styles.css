@@ -331,6 +331,11 @@ span.logo-studio {
     justify-content: center;
 }
 
+.team-icons-link:hover,
+.team-icons-link:focus {
+    background-color: #404BBF;
+}
+
 /* Our team section */
 .section-our-team {
     padding-top: 120px;
