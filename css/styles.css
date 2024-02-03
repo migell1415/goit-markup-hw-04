@@ -58,6 +58,10 @@ a {
     
 }
 
+.header {    
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
 span.logo-studio {
     color: #2E2F42;
     font-family: "Raleway",sans-serif;
@@ -67,6 +71,7 @@ span.logo-studio {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 
 .nav-list {
     display: flex;
@@ -81,12 +86,13 @@ span.logo-studio {
     letter-spacing: 0.02em;
     padding: 24px 0;
     display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
     position: relative;
     color: #404BBF;
+
 }
 
 .current::after{
@@ -130,6 +136,7 @@ span.logo-studio {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover, .contacts:focus {
     color: var(--OCEAN, #404BBF);
@@ -158,10 +165,10 @@ span.logo-studio {
 
 .section-first {
     max-width: 1440px;
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -183,6 +190,7 @@ span.logo-studio {
     border-radius: 4px;
     display: block;
     padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover, .button:focus {
@@ -317,6 +325,10 @@ span.logo-studio {
     gap: 24px;
     justify-content: center;
     align-items: center;
+}
+
+.team-icon {
+    fill: #f4f4fd;
 }
 
 .team-icons-link {
@@ -487,6 +499,11 @@ span.logo-studio-footer {
     align-items: baseline;
 }
 
+.footer-icons{
+fill: #f4f4fd; 
+}
+
+
 .footer-icons-link {
     width: 40px;
     border-radius: 50%;
@@ -499,7 +516,8 @@ span.logo-studio-footer {
     height: 40px;
 }
 
-.footer-icons-link:hover {
+.footer-icons-link:hover,
+.footer-icons-link:focus {
     background-color:#31d0aa;
 }
 
